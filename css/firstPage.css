@@ -9,6 +9,13 @@ html body
 	width: 100%;
 	text-align: center;
 }
+
+#bookHolder.nextPage
+{
+	width: 100%;
+	text-align: center;
+	margin-left: -10vw;
+}
 /*The book cover*/
 #bookCover
 {
@@ -57,6 +64,7 @@ html body
 	height: 70vh;
 }
 
+/*The third page is split into two divs to give the appearence of seperate pages*/
 #pageThreeLeft
 {
 	position: relative;
@@ -88,7 +96,7 @@ html body
 	margin-left: 25vw;
 	margin-top: -5vh;
 	height:20vh;
-	width: 20vh;
+	width: 15vw;
 	-webkit-clip-path: polygon(17% 0, 17% 100%, 46% 83%, 76% 99%, 76% 0);
 	clip-path: polygon(17% 0, 17% 100%, 46% 83%, 76% 99%, 76% 0);
 	z-index: 1;
@@ -137,9 +145,22 @@ p:hover
 	opacity: .5;
 	color:white;
 }
-
+/*The regular visible text*/
 .textLines
 {
 	text-align: center;
 	margin-right:2vw;
+}
+/*The button to go to the next level*/
+.nextButton
+{
+	position: relative;
+	margin-left: 80vw;
+	margin-top: -50vh;
+	-webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+	height: 15vh;
+	width: 15vw;
+	background: black;
+	opacity: 0;
 }
