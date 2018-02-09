@@ -2,6 +2,8 @@ var revealText = document.getElementsByClassName('interpolateText');
 //an array used to hold all the interpolate text objects
 var revealArray = [];
 var nextButton = document.getElementsByClassName('nextButton');
+// The array holding the book container
+var bookContainer = document.getElementById('bookHolder');
 
 // This loops through all my interpolated text boxes
 for(i=0; i<revealText.length; i++)
@@ -10,6 +12,7 @@ for(i=0; i<revealText.length; i++)
 	//adding the interpolate objects to the array
 	revealArray.push(revealText[i]);
 };
+
 
 // The function used change the opacity on click @me is the variable that allows for the clicked p to be the revealed one.
 function reveal(me)
@@ -20,7 +23,8 @@ function reveal(me)
 	{
 		//Make the next level buton visible
 		nextButton[0].style.opacity = '1';
-		revealText.classList.add('nextPage');
+
+		moveBook();
 	}
 }
 
@@ -28,4 +32,12 @@ function reveal(me)
 function checkOpacity(me)
 {
 	return me.style.opacity == true;
+}
+
+//moves the book container div to make room for the next level button.
+function moveBook()
+{
+
+	void bookContainer.offsetWidth;
+	bookContainer.classList.add("nextPage");
 }
