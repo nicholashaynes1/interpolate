@@ -120,7 +120,7 @@ p:hover
 	margin-right:2vw; 
 }
 /*The styling fo the interpolation*/
-.interpolateLeft
+.interpolateText
 {
 	text-align: left;
 	margin-right:2vw;
@@ -131,7 +131,7 @@ p:hover
 	display: inline;
 }
 
-.interpolateLeft:hover
+.interpolateText:hover
 {
 	background-color: gray;
 	opacity: .5;
