@@ -10,6 +10,7 @@ html body
 	text-align: center;
 }
 
+/*The style for the book with the next button up*/
 #bookHolder.nextPage
 {
 	width: 100%;
@@ -137,7 +138,11 @@ p:hover
 	margin-left: 1.4vw;
 	font-size: 2.5vw;
 	display: inline;
+	color: red;
+	text-shadow: 0 0 40px #FF0000;
 }
+
+.interpolateTextFade
 
 .interpolateText:hover
 {
@@ -151,6 +156,17 @@ p:hover
 	text-align: center;
 	margin-right:2vw;
 }
+
+
+/*The animations for the divs*/
+@keyframes interpolateFadeIn
+{
+	0%{opacity: .5; color: red;}
+	50%{opacity: 1; color: red;}
+	100%{opacity: .5; color: red;}
+
+}
+
 /*The button to go to the next level*/
 .nextButton
 {

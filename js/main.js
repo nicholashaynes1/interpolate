@@ -17,7 +17,11 @@ for(i=0; i<revealText.length; i++)
 // The function used change the opacity on click @me is the variable that allows for the clicked p to be the revealed one.
 function reveal(me)
 {
-	me.style.opacity = "1";
+	//begins the fade in animations for the interpolated text
+	me.style.animation = "interpolateFadeIn";
+	me.style.animationDuration = "4s";
+	me.style.animationIterationCount = "infinite";
+	me.style.opacity = ".5";
 	// This checks to see if every interpolated text is revealed and if it is to show the next level button.
 	if(revealArray.every(checkOpacity) == true)
 	{
@@ -31,7 +35,7 @@ function reveal(me)
 //Checks the opactiy of every button
 function checkOpacity(me)
 {
-	return me.style.opacity == true;
+	return me.style.opacity == .5;
 }
 
 //moves the book container div to make room for the next level button.
@@ -40,4 +44,14 @@ function moveBook()
 
 	void bookContainer.offsetWidth;
 	bookContainer.classList.add("nextPage");
+}
+
+// Load new web page links
+function loadLevelTwo()
+{
+	window.location = "webpages/levelTwo.html";
+}
+function loadLevelThree()
+{
+	window.location = "levelThree.html";
 }
