@@ -22,12 +22,12 @@ function reveal(me)
 	me.style.animationDuration = "4s";
 	me.style.animationIterationCount = "infinite";
 	me.style.opacity = ".5";
+	
 	// This checks to see if every interpolated text is revealed and if it is to show the next level button.
 	if(revealArray.every(checkOpacity) == true)
 	{
-		//Make the next level buton visible
-		nextButton[0].style.opacity = '1';
-
+		//Make the next level button start its animation
+		nextButton[0].classList.add("revealed");
 		moveBook();
 	}
 }
@@ -43,7 +43,8 @@ function moveBook()
 {
 
 	void bookContainer.offsetWidth;
-	bookContainer.classList.add("nextPage");
+	bookContainer.classList.add("nextPageButton");
+
 }
 
 // Load new web page links
