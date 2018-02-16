@@ -56,3 +56,7 @@ function loadLevelThree()
 {
 	window.location = "levelThree.html";
 }
+function loadLevelFour()
+{
+	window.location = "LevelFour.html";
+}
