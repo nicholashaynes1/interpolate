@@ -60,3 +60,8 @@ function loadLevelFour()
 {
 	window.location = "LevelFour.html";
 }
+
+function loadReplayScreen()
+{
+	window.location = "replayScreen.html"
+}
