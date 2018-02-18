@@ -1,6 +1,6 @@
 html body
 {
-	
+	background-color: #41464C;
 }
 
 /*The container holding all the book stuff*/
@@ -22,7 +22,7 @@ html body
 #bookCover
 {
 	position: relative;
-	background: green;
+	background: #013220;
 	margin-left: 15vw;
 	margin-right: 15vw;
 	height: 80vh;
@@ -35,7 +35,7 @@ html body
 #bookSpine
 {
 	position: relative;
-	background:green;
+	background:#0C2016;
 	width:8vw;
 	height:80vh;
 	border:solid black 2px;
@@ -47,7 +47,7 @@ html body
 #pageOne
 {
 	position: relative;
-	background: white;
+	background: #F8ECC2;
 	border:solid black 2px;
 	margin-left: 18vw;
 	margin-right: 18vw;
@@ -58,7 +58,7 @@ html body
 #pageTwo
 {
 	position: relative;
-	background: white;
+	background: #F8ECC2;
 	border:solid black 2px;
 	margin-left: 20vw;
 	margin-right: 20vw;
@@ -70,7 +70,7 @@ html body
 #pageThreeLeft
 {
 	position: relative;
-	background: white;
+	background: #F8ECC2;
 	border:solid black 2px;
 	margin-left: 24vw;
 	margin-right: 48vw;
@@ -81,7 +81,7 @@ html body
 #pageThreeRight
 {
 	position: relative;
-	background: white;
+	background: #F8ECC2;
 	border:solid black 2px;
 	margin-left: 48vw;
 	margin-right: 24vw;
@@ -94,7 +94,7 @@ html body
 #bookmark
 {
 	position: relative;
-	background-color: red;
+	background-color: #8B0000;
 	margin-left: 25vw;
 	margin-top: -5vh;
 	height:20vh;
@@ -120,6 +120,11 @@ p:hover
 	background-color: gray;
 	opacity: .5;
 	color:black;
+}
+
+h1
+{
+	font-size: 8vw;
 }
 
 /*The div that styles the actor*/
@@ -272,6 +277,8 @@ p:hover
 }
 
 /*The animations for the divs*/
+
+/*Interpolation fade-ins*/
 @keyframes interpolateFadeIn
 {
 	0%{opacity: .5; color: red;}
@@ -279,12 +286,57 @@ p:hover
 	100%{opacity: .5; color: red;}
 
 }
+/*Firefox*/
+@-moz-keyframes interpolateFadeIn
+{
+	0%{opacity: .5; color: red;}
+	50%{opacity: 1; color: red;}
+	100%{opacity: .5; color: red;}
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes interpolateFadeIn 
+{
+  0% { opacity: .5; color: red; }
+  25% {opacity: .5; color: red; }
+  50% { opacity: .5; color: red; }
+  100%   { opacity: .5; color: red; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes interpolateFadeIn 
+{
+  0% { opacity: .5; color: red; }
+  25% { opacity: .5; color: red; }
+  50% { opacity: .5; color: red; }
+  100% { opacity: .5; color: red; }
+}
+
 
 /*The aniamtion to move the book to make room for the button*/
 @keyframes moveBook
 {
 	0%{margin-left: 0vw;}
 	100%{margin-left:-10vw;}
+}
+
+/*Firefox*/
+@-moz-keyframes moveBook
+{
+	0%{margin-left: 0vw;}
+	100%{margin-left:-10vw;}
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes moveBook 
+{
+  0%{margin-left: 0vw;}
+  100%{margin-left:-10vw;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes moveBook 
+{
+  0%{margin-left: 0vw;}
+  100%{margin-left:-10vw;}
 }
 /*The animation to make the next level button fade in*/
 @keyframes nextButtonFadein

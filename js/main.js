@@ -48,6 +48,11 @@ function moveBook()
 }
 
 // Load new web page links
+function loadLevelOne()
+{
+	window.location = "C:/Users/nick/Documents/WebsiteWorkspace/interpolate/index.html";
+}
+
 function loadLevelTwo()
 {
 	window.location = "webpages/levelTwo.html";
