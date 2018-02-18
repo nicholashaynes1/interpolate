@@ -258,7 +258,8 @@ p:hover
 	width: 15vw;
 	background: black;
 	opacity: 1;
-	animation: nextButtonFadein 2s;
+	animation: replayButton 2s;
+	animation-iteration-count: infinite;
 	text-align: center;
 	margin-left: 40vw;
 	
@@ -297,6 +298,13 @@ p:hover
 	0%{margin-left: -3vw;}
 	50%{margin-left: -4vw;}
 	100%{margin-left: -3vw;}
+}
+
+@keyframes replayButton
+{
+	0%{margin-left: 40vw;}
+	50%{margin-left: 38vw;}
+	100%{margin-left: 40vw;}
 }
 
 /*The button to go to the next level*/
