@@ -1,6 +1,15 @@
 html body
 {
 	background-color: #41464C;
+	animation: fadeIn 3s;
+}
+
+.nextButton:active
+{
+	body
+	{
+		
+	}
 }
 
 /*The container holding all the book stuff*/
@@ -357,6 +366,14 @@ h1
 	0%{margin-left: 40vw;}
 	50%{margin-left: 38vw;}
 	100%{margin-left: 40vw;}
+}
+
+
+@keyframes fadeIn
+{
+	0%{opacity: 0;}
+	25%{opacity: 0;}
+	100%{opacity: 1;}
 }
 
 /*The button to go to the next level*/
