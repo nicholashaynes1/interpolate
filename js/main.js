@@ -4,6 +4,12 @@ var revealArray = [];
 var nextButton = document.getElementsByClassName('nextButton');
 // The array holding the book container
 var bookContainer = document.getElementById('bookHolder');
+// The audio file
+var audio = document.getElementById('myAudio');
+// The timer variable that controls the audio playing
+var playAudioTimer = setTimeout(playAudio(), 3000);
+
+
 
 // This loops through all my interpolated text boxes
 for(i=0; i<revealText.length; i++)
@@ -12,7 +18,6 @@ for(i=0; i<revealText.length; i++)
 	//adding the interpolate objects to the array
 	revealArray.push(revealText[i]);
 };
-
 
 // The function used change the opacity on click @me is the variable that allows for the clicked p to be the revealed one.
 function reveal(me)
@@ -44,17 +49,26 @@ function moveBook()
 
 	void bookContainer.offsetWidth;
 	bookContainer.classList.add("nextPageButton");
-
 }
+
+//Plays the page turning audio
+function playAudio()
+{
+	audio.play();
+}
+
 
 // Load new web page links
 function loadLevelOne()
 {
 	window.location = "C:/Users/nick/Documents/WebsiteWorkspace/interpolate/index.html";
+	
 }
+
 
 function loadLevelTwo()
 {
+	bodyFadeTimer;
 	window.location = "webpages/levelTwo.html";
 }
 function loadLevelThree()
